@@ -6,3 +6,8 @@
  scikit-learn
  opencv-Python
  nltk
+ pymysql
+ cryptography
+ torch
+ transformers
+ torchvision
