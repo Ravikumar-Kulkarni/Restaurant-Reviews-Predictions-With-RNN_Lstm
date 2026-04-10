@@ -32,9 +32,9 @@ foods = ["Idly", "Dosa", "Vada", "Roti", "Meals", "Veg Biryani",
          "Ice Cream", "Noodles", "Manchooriya", "Orange juice",
          "Apple Juice", "Pineapple juice", "Banana juice"]
 
-
+  # here customer logic code :
 def take_review():
-    root2 = Toplevel()
+    root2 = Toplevel()  # it is  use to entry and create different window.
     root2.geometry('1400x900')
     root2.title(main+"give review")
 
@@ -82,7 +82,7 @@ def take_review():
 
     submit_review = Button(root2, text="Submit Review", font=(
        'Arial', 20), padx=100, pady=20, command=lambda: [
-             estimate(rev_tf.get())])
+             estimate(rev_tf.get())])  # it will go to the estimate.
 
 
     req2.grid(row=7, column=0, columnspan=4, sticky=W+E)
@@ -257,7 +257,7 @@ def login():
        
        
        
-   
+         # main owner page logic code:
         l1 = Label(win, text='REVIEW STATISTICAL ANALYSIS', height=2, width=40, relief='ridge',
                    bd=5, font=('times new roman', 14, 'bold'))
         l1.place(x=400, y=40)
@@ -299,7 +299,7 @@ def login():
         #             bd=5, font=('times new roman', 12, 'bold'))
         # b6.place(x=500, y=200)
 
-
+            # from here main treev code.
         treev = ttk.Treeview(win, selectmode='browse', height=20)
         treev.place(x=700, y=110, width=500)
 
@@ -325,7 +325,7 @@ def login():
        
 
 
-        win.mainloop()
+        win.mainloop()  # its main owner's main fiart page.
 
 
 
